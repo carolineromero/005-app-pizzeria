@@ -5,9 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Planet</title>
+<<<<<<< HEAD                                      
     
+=======
+>>>>>>> 14a548b74eae8f0cd4e45c8195c3d1b79d3d7836
 </head>
 <body>
+    <div class="paginaCompra"> <!-- Pagina Principal -->
+        <img src="" alt="" class = "logo"> <!-- Logo -->
+        <h1 class = "encabezado">Find your Favorite Food</h1>
+        <div class ="banner"> <!-- Sección de descuento del pollo = banner -->
+            <img src="" alt="" class="imgDescuento">
+            <ul>
+                <li class ="porDescuento"></li>
+                <li class = "descuentoMenu"></li>
+            </ul>
+        </div>
+        <div class = "pizza-item">  <!-- Componente 3 Carlos lo llamó pizza-item -->
+            <ul>
+                <img src="" alt="" class ="imagenPizza">
+                <li class ="nombrePizza"></li>
+                <li class = "ingrediente"></li>
+                <li class = "precio"></li>
+            </ul>
+            <button class = "item-pizza-button-add" ></button> <!-- llama a función que suma las pizzas que se van seleccionando -->
+        </div> 
+        <div class = "section-buttn-shop-cart">
+            <img src="" alt="" class = "buttn-shop-cart">
+            <p class="sum-items">+</p> <!-- aqui se despliega el resultado de la función que sume las pizzas seleccionadas -->
+        </div>
+    </div>
     
+    <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
+        <header class = "encabezadoCarrito">
+            <p class ="clearAll">Clear all</p>
+            <p clase = "buttn-close">×</p>
+            <h1 class = "encabezado">Find your Favorite Food</h1>
+        </header>
+        <body class = "item-selec">
+            <div class = "item-selec-info">
+                <img src="" alt="Pizza seleccionada">
+                <p class = "item-selec-info-nombre"></p>
+                <p class = "item-selec-info-precio"></p>
+            </div>
+            <div class = "item-selec-cantidad">
+                <p class ="buttn-item-selec-suma"></p>
+                <p class ="item-selec-info-cantidad"></p>
+                <p class ="buttn-item-selec-resta"></p>
+            </div>
+            <ul class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
+                <li class = "itemTotal">Item Total</li>
+                <li class = "itemTotalEuros"><!--${..}--></li>
+                <li class = "deliveryCharge">Delivery Charge </li>
+                <li class = "deliveryChargeEuros"><!--${..}--></li>
+                <li class = "tax">Tax</li>
+                <li class = "taxEuros"><!--${..}--></li>
+                <li class = "total">Total</li>
+                <li class = "totalEuros"><!--${..}--></li>
+            </ul>
+        </body> 
+
+        <button class = "buttn-checkout">Checkout</button>
+    </div> 
 </body>
 </html>
