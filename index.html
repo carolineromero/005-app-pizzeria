@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Planet</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="fonts.css">
     
 </head>
 <body>
     <div class="paginaCompra"> <!-- Pagina Principal -->
-        <img src="" alt="" class = "logo"> <!-- Logo -->
-        <h1 class = "encabezado">Find your Favorite Food</h1>
+        <div class="containerHeader">
+        <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo"> <!-- Logo -->
+        <nav>
+            <ul class="barraDesktop">
+                <li class="botonPizzas">Pizzas</li>
+                <li class="linksBarra">Bebidas</li>
+                <li class="linksBarra">Postres</li>
+                <li class="linksBarra">Carro</li>
+            </ul>
+        </nav>
+        </div>
+        <h2 class = "encabezado">Find your</h2>
+        <h2 class = "encabezado">favourite foods 😜</h2>
+        <br>
         <div class ="banner"> <!-- Sección de descuento del pollo = banner -->
-            <img src="" alt="" class="imgDescuento">
-            <ul>
-                <li class ="porDescuento"></li>
-                <li class = "descuentoMenu"></li>
+            <img src="./images/pizza.png" alt="" class="imgDescuento">
+            <ul class = "listaDescuento">
+                <li class ="porDescuento">25% Off</li>
+                <br>
+                <li class = "descuentoMenu">Enjoy 25% discount on</li>
+                <li class="descuentoMenu">Full Menu</li>
             </ul>
         </div>
         <div class = "pizza-item">  <!-- Componente 3 Carlos lo llamó pizza-item -->
