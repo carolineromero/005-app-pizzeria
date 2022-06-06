@@ -109,6 +109,94 @@
     padding: 20px 50px 20px 50px;
 }
 
+.clearAll{
+    font-family: "Inria Sans" ;
+    border-radius: 3px;
+    border-style: none;
+    background-color: #fdc23873;
+}
+
+.item-selec-info{
+    background-color: #e3e3e3;
+    color: white;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Inria Sans";
+    margin: auto;
+
+}
+
+.img-precio-nombre{
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    border: 0;
+
+  
+    
+}
+
+.item-img-pizza{
+    width: 30%;
+    display: flex;
+    padding-right: 10px;
+
+}
+.item-selec-info-precio{
+    font-family: "Inria Sans";
+    color:black;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-right: 10px;
+}
+
+.item-selec-info-nombre{
+    color: black;
+    font-family: "Inria Sans";
+    padding-right: 10px;
+}
+
+.item-selec-cantidad{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.buttn-item-selec-suma{
+    font-family: "Inria Sans";
+    font-size: x-large;
+    padding-right: 10px;
+   
+}
+.buttn-item-selec-suma:hover{
+    background: #FDC138;
+    border-radius: 36px;
+   
+}
+
+.item-selec-info-cantidad{
+    font-family: "Inria Sans";
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.buttn-item-selec-resta{
+    font-family: "Inria Sans";
+    font-size: x-large;
+}
+
+.buttn-item-selec-resta:hover{
+    background: #FDC138;
+    border-radius: 36px;
+
 @media (min-width:600px){
 
     .logo{
@@ -153,6 +241,14 @@
 
     .linksBarra{
         padding: 2%;
+    }
+
+
+    .item-selec-info{
+        width: 40%;
+        position: relative;
+        left: 10%;
+        margin-left: 1%;
     }
 
 }

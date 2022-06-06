@@ -51,21 +51,24 @@
     
     <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
         <header class = "encabezadoCarrito">
-            <p class ="clearAll">Clear all</p>
-            <p clase = "buttn-close">×</p>
-            <h1 class = "encabezado">Find your Favorite Food</h1>
+            <button class="clearAll" >Clear all</button>
+            <h1 class = "encabezado">Your Cart</h1>
+            <h1 class = "encabezado">Food</h1>
         </header>
         <body class = "item-selec">
             <div class = "item-selec-info">
-                <img src="" alt="Pizza seleccionada">
-                <p class = "item-selec-info-nombre"></p>
-                <p class = "item-selec-info-precio"></p>
+                <div class = "img-precio-nombre">
+                <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
+                <p class = "item-selec-info-precio">$12.99</p>
+                <p class = "item-selec-info-nombre"> Greek Pizza</p>
             </div>
-            <div class = "item-selec-cantidad">
-                <p class ="buttn-item-selec-suma"></p>
-                <p class ="item-selec-info-cantidad"></p>
-                <p class ="buttn-item-selec-resta"></p>
+                <div class = "item-selec-cantidad">
+                    <p class ="buttn-item-selec-suma">+</p>
+                    <p class ="item-selec-info-cantidad">1</p>
+                    <p class ="buttn-item-selec-resta">-</p>
+                </div>
             </div>
+            
             <div class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
                 <div class = "resComItemTotal">Item Total:</div>
                 <div class = "resComItemTotalEuros"><!--${..}--></div>
