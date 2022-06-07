@@ -1,4 +1,4 @@
-@media only screen and (max-width:600px) {
+
     .pizza-item-list{
         margin-left: 8%;
         margin-right: 8%;
@@ -139,4 +139,3 @@
         z-index: 2;
     }
 
-    }
