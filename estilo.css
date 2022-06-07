@@ -112,6 +112,7 @@
 .clearAll{
     font-family: "Inria Sans" ;
     border-radius: 3px;
+    
     border-style: none;
     background-color: #fdc23873;
 }
