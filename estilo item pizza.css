@@ -1,16 +1,17 @@
-    .pizza-item-list{
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+.pizza-item-list{
         margin-left: 8%;
         margin-right: 8%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        display: flex;
     }   
     
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+    
     
     .rectangulo{  
         padding: 41px 20px 7px;
