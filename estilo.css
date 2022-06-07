@@ -254,8 +254,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         margin-left: 1%;
     }
 
-    .container-derecho{
-        
+    .container-general{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
 
 
