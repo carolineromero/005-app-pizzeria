@@ -7,6 +7,7 @@
     <title>Pizza Planet</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="./estilo item pizza.css">
     
 </head>
 <body>
@@ -34,20 +35,27 @@
                 <li class="descuentoMenu">Full Menu</li>
             </ul>
         </div>
-        <div class = "pizza-item">  <!-- Componente 3 Carlos lo llamó pizza-item -->
-            <ul>
-                <img src="" alt="" class ="imagenPizza">
-                <li class ="nombrePizza"></li>
-                <li class = "ingrediente"></li>
-                <li class = "precio"></li>
-            </ul>
-            <button class = "item-pizza-button-add" ></button> <!-- llama a función que suma las pizzas que se van seleccionando -->
-        </div> 
-        <div class = "section-buttn-shop-cart">
-            <img src="" alt="" class = "buttn-shop-cart">
-            <p class="sum-items">+</p> <!-- aqui se despliega el resultado de la función que sume las pizzas seleccionadas -->
-        </div>
-    </div>
+        <section class = "pizza-item-list">
+            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item -->
+                <img src="" alt="Imagen de pizza" class ="imagenPizza">
+                <div class = "rectangulo"></div>
+                <div class = "infoPizza">
+                    <p class ="nombrePizza"></p>
+                    <p class = "ingrediente"></p>
+                </div>
+                <div class = "infoPrecio">
+                    <p class = "precio" ><span>$</span></p>
+                    <button class = "item-pizza-button-add" >+</button>
+                </div>
+            </div>
+        </section>
+        <section class = "section-buttn-shop-cart">
+            <div class="info-items">
+                <p class ="suma-items"></p>
+                <button class = "bttnCarrito"></button>
+                <img class = "icon-shop-cart" src="./imagenes/shopping-cart.png" alt="Carrito de compra">
+            </div>
+        </section>
     
     <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
         <header class = "encabezadoCarrito">

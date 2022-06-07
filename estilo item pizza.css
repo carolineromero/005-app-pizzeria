@@ -1,0 +1,89 @@
+.pizza-item-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 5%;
+    row-gap: 5%;
+}
+.pizza-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+.imagenPizza{
+    display:flex;
+    position: relative;
+    z-index: 2;
+    width: 108px;
+    height: 108px;
+}
+.rectangulo{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background-color: gray;
+    margin-top: 15%;
+    width: 26%;
+    height: 15%;
+    border-radius: 20%;
+    opacity: 15%;
+}
+.infoPizza{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.nombrePizza{
+    position: relative;
+    z-index: 1;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.ingrediente{
+    position: relative;
+    z-index: 1;
+    font-family: 'Jost';
+    font-style: normal;
+    color: slategrey;
+    font-weight: 600;
+    font-size: 0.6rem;
+}
+.infoPrecio{
+    display:flex;
+    position: relative;
+    z-index: 1;
+    width: 45%;
+    align-items:flex-start;
+}
+.precio{
+    display:flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.item-pizza-button-add{
+    display:flex;
+    position: relative;
+    z-index: 1;
+    width: 2.5rem;
+    height: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: #FDC138;
+    border-style: hidden;
+}
+.section-buttn-shop-cart{
+}
+.buttn-shop-cart{
+}
+.sum-items{
+}
