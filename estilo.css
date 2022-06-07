@@ -197,6 +197,7 @@
 .buttn-item-selec-resta:hover{
     background: #FDC138;
     border-radius: 36px;
+}
 
 @media (min-width:600px){
 
@@ -252,5 +253,4 @@
         margin-left: 1%;
     }
 
-}
 }
