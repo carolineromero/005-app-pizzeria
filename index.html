@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Planet</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="fonts.css">
     
 </head>
 <body>
     <div class="paginaCompra"> <!-- Pagina Principal -->
-        <img src="" alt="" class = "logo"> <!-- Logo -->
-        <h1 class = "encabezado">Find your Favorite Food</h1>
+        <div class="containerHeader">
+        <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo"> <!-- Logo -->
+        <nav>
+            <ul class="barraDesktop">
+                <li class="botonPizzas">Pizzas</li>
+                <li class="linksBarra">Bebidas</li>
+                <li class="linksBarra">Postres</li>
+                <li class="linksBarra">Carro</li>
+            </ul>
+        </nav>
+        </div>
+        <h2 class = "encabezado">Find your</h2>
+        <h2 class = "encabezado">favourite foods 😜</h2>
+        <br>
         <div class ="banner"> <!-- Sección de descuento del pollo = banner -->
-            <img src="" alt="" class="imgDescuento">
-            <ul>
-                <li class ="porDescuento"></li>
-                <li class = "descuentoMenu"></li>
+            <img src="./images/pizza.png" alt="" class="imgDescuento">
+            <ul class = "listaDescuento">
+                <li class ="porDescuento">25% Off</li>
+                <br>
+                <li class = "descuentoMenu">Enjoy 25% discount on</li>
+                <li class="descuentoMenu">Full Menu</li>
             </ul>
         </div>
         <div class = "pizza-item">  <!-- Componente 3 Carlos lo llamó pizza-item -->
@@ -35,34 +51,36 @@
     
     <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
         <header class = "encabezadoCarrito">
-            <p class ="clearAll">Clear all</p>
-            <p clase = "buttn-close">×</p>
-            <h1 class = "encabezado">Find your Favorite Food</h1>
+            <button class="clearAll" >Clear all</button>
+            <h1 class = "encabezado">Your Cart</h1>
+            <h1 class = "encabezado">Food</h1>
         </header>
         <body class = "item-selec">
             <div class = "item-selec-info">
-                <img src="" alt="Pizza seleccionada">
-                <p class = "item-selec-info-nombre"></p>
-                <p class = "item-selec-info-precio"></p>
+                <div class = "img-precio-nombre">
+                <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
+                <p class = "item-selec-info-precio">$12.90</p>
+                <p class = "item-selec-info-nombre"> Greek Pizza</p>
             </div>
-            <div class = "item-selec-cantidad">
-                <p class ="buttn-item-selec-suma"></p>
-                <p class ="item-selec-info-cantidad"></p>
-                <p class ="buttn-item-selec-resta"></p>
+                <div class = "item-selec-cantidad">
+                    <p class ="buttn-item-selec-suma">+</p>
+                    <p class ="item-selec-info-cantidad">1</p>
+                    <p class ="buttn-item-selec-resta">-</p>
+                </div>
             </div>
-            <ul class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
-                <li class = "itemTotal">Item Total</li>
-                <li class = "itemTotalEuros"><!--${..}--></li>
-                <li class = "deliveryCharge">Delivery Charge </li>
-                <li class = "deliveryChargeEuros"><!--${..}--></li>
-                <li class = "tax">Tax</li>
-                <li class = "taxEuros"><!--${..}--></li>
-                <li class = "total">Total</li>
-                <li class = "totalEuros"><!--${..}--></li>
-            </ul>
-        </body> 
-
-        <button class = "buttn-checkout">Checkout</button>
-    </div> 
+            
+            <div class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
+                <div class = "resComItemTotal">Item Total:</div>
+                <div class = "resComItemTotalEuros"><!--${..}--></div>
+                <div class = "resComDeliveryCharge">Delivery Charge:</div>
+                <div class = "resComDeliveryChargeEuros"><!--${..}--></div>
+                <div class = "resComTax">Tax:</div>
+                <div class = "resComTaxEuros"><!--${..}--></div>
+                <div class = "resComTotal">Total:</div>
+                <div class = "resComTotalEuros"><!--${..}--></div>
+                <button class = "buttn-checkout">Checkout</button>
+            </div>
+    </body>
+</div> 
 </body>
 </html>
