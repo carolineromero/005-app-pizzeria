@@ -11,7 +11,11 @@
         display: flex;
     }   
     
-    
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
     
     .rectangulo{  
         padding: 41px 20px 7px;
@@ -48,9 +52,7 @@
     }
     
     .pizza-item{
-     
         width: 50%;
-        background-color: aqua;
         margin: 2px;
         display: flex;
         flex-direction: column;
