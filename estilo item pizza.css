@@ -1,89 +1,142 @@
-.pizza-item-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 5%;
-    row-gap: 5%;
-}
-.pizza-item{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
-}
-.imagenPizza{
-    display:flex;
-    position: relative;
-    z-index: 2;
-    width: 108px;
-    height: 108px;
-}
-.rectangulo{
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    background-color: gray;
-    margin-top: 15%;
-    width: 26%;
-    height: 15%;
-    border-radius: 20%;
-    opacity: 15%;
-}
-.infoPizza{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-}
-.nombrePizza{
-    position: relative;
-    z-index: 1;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.8rem;
-}
-.ingrediente{
-    position: relative;
-    z-index: 1;
-    font-family: 'Jost';
-    font-style: normal;
-    color: slategrey;
-    font-weight: 600;
-    font-size: 0.6rem;
-}
-.infoPrecio{
-    display:flex;
-    position: relative;
-    z-index: 1;
-    width: 45%;
-    align-items:flex-start;
-}
-.precio{
-    display:flex;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-}
-.item-pizza-button-add{
-    display:flex;
-    position: relative;
-    z-index: 1;
-    width: 2.5rem;
-    height: 1.5rem;
-    border-radius: 10px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background: #FDC138;
-    border-style: hidden;
-}
-.section-buttn-shop-cart{
-}
-.buttn-shop-cart{
-}
-.sum-items{
-}
+@media only screen and (max-width:600px) {
+    .pizza-item-list{
+        margin-left: 8%;
+        margin-right: 8%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }   
+    
+    .pizza-item{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+    
+    .imagenPizza{
+        display:flex;
+        position: relative;
+        z-index: 2;
+        margin-top: 8%;
+        width: 108px;
+        height: 108px;
+    }
+    
+    .rectangulo{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        background-color: gray;
+        margin-top: 15%;
+        width: 26%;
+        height: 18%;
+        border-radius: 20%;
+        opacity: 15%;
+    }
+    
+    .infoPizza{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        align-items:flex-start;
+        margin-top: 4%;
+        margin-left: 6%;
+    }
+    
+    .nombrePizza{
+        position: relative;
+        z-index: 1;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    
+    .ingrediente{
+        position: relative;
+        z-index: 1;
+        font-family: 'Jost';
+        font-style: normal;
+        color: slategrey;
+        font-weight: 600;
+        font-size: 0.6rem;
+    }
+    
+    .infoPrecio{
+        display:flex;
+        position: relative;
+        z-index: 1;
+        width: 45%;
+        align-items:flex-start;
+        margin-top: 2%;
+        margin-left: 6%;
+    }
+    
+    .precio{
+        display:flex;
+        position: relative;
+        z-index: 1;
+        width: 60%;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
+    .item-pizza-button-add{
+        display:flex;
+        position: relative;
+        z-index: 1;
+        width: 2rem;
+        height: 1.5rem;
+        border-radius: 10px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        background: #FDC138;
+        border-style: hidden;
+    }
+    
+    .section-buttn-shop-cart{
+        display: flex; 
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 6%;
+        bottom: 0;
+        background-color: rgb(181, 181, 174);
+    }
+    
+    .info-items{
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        z-index: 2;
+        width: 10%;
+        height: 10%;
+        border-radius: 10%;
+    }
+    
+    .bttnCarrito{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        width: 75%;
+        height: 2rem;
+        border-radius: 10px;
+        color: white;
+       align-content: center;
+        background: #fd9e38;
+        border-color: white;
+    }
+    
+    .icon-shop-cart{
+        width: 2rem;
+        height: 1.5rem;
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    }
