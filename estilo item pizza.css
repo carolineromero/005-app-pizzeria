@@ -8,8 +8,8 @@
     
     *{
         box-sizing: border-box;
-        margin: 0;
         padding: 0;
+        margin: 0;
     }
     
     .rectangulo{  
@@ -47,9 +47,7 @@
     }
     
     .pizza-item{
-     
         width: 50%;
-        background-color: aqua;
         margin: 2px;
         display: flex;
         flex-direction: column;
