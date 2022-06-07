@@ -14,6 +14,7 @@ body {max-width: 600px;}
     line-height: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 4%;
 }
 
 .banner{
@@ -265,10 +266,5 @@ body {max-width: 600px;}
         justify-content: space-between;
         flex-direction: row;
     }
-
-
-
-
-
 }
 */
