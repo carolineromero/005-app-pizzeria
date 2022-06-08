@@ -59,11 +59,13 @@ body {max-width: 600px;}
 
 .resumenCompra{
     display: grid;
+
     grid-template-columns: 50% 50%;
     font-family: "Inria Sans";
     margin: 13% 7% 13% 7%;
-    grid-template-rows: 2.5em 2.5em 2.5em 5em ;
+    grid-template-rows:  2.5em 2.5em 2.5em 5em ;
     font-size: 15px;
+ 
 }
 
 .resComItemTotal{
@@ -71,7 +73,8 @@ body {max-width: 600px;}
 }
 
 .resComItemTotalEuros{
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .resComDeliveryCharge{
@@ -79,7 +82,8 @@ body {max-width: 600px;}
 }
 
 .resComDeliveryChargeEuros{
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .resComTax{
@@ -88,17 +92,21 @@ body {max-width: 600px;}
 }
 
 .resComTaxEuros{
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
     border-bottom: 1px solid #B8B4B1;
 }
 
 .resComTotal{
-    align-self: center;
+    display: flex;
+    align-items:center;
     font-weight:bolder;
 }
 
 .resComTotalEuros{
+    display: flex;
     align-self: center;
+    justify-content: flex-end;
     font-weight:bolder;
 }
 
