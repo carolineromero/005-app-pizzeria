@@ -11,13 +11,7 @@
         display: flex;
     }   
     
-    *{
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .rectangulo{  
+.rectangulo{  
         padding: 41px 20px 7px;
         gap: 2px;
         background: #F3F3F7;
@@ -28,7 +22,7 @@
     
     }
     
-    .imagenPizza{
+.imagenPizza{
         width: 50%;
         z-index: 1;
         position: absolute;
@@ -36,13 +30,13 @@
         min-width: 100px;
     }
     
-    .infoPrecio{
+.infoPrecio{
         width: 100%;
         display: flex;
         justify-content: space-between;
         }
     
-    .item-pizza-button-add{
+.item-pizza-button-add{
         background-color: orange;
         border-radius: 15px;
         height: 30px;
@@ -51,7 +45,7 @@
         color: white;
     }
     
-    .pizza-item{
+.pizza-item{
         width: 50%;
         margin: 2px;
         display: flex;
@@ -59,11 +53,8 @@
         align-items: center;
         position: relative;
     }
-    .pizza-item-list{
-        display: flex;
-    }
  
-    .nombrePizza{
+.nombrePizza{
         position: relative;
         z-index: 1;
         font-family: 'Jost';
@@ -72,7 +63,7 @@
         font-size: 0.8rem;
     }
     
-    .ingrediente{
+.ingrediente{
         position: relative;
         z-index: 1;
         font-family: 'Jost';
@@ -83,7 +74,7 @@
     }
     
     
-    .precio{
+.precio{
         display:flex;
         position: relative;
         z-index: 1;
@@ -95,7 +86,7 @@
     }
     
 
-    .section-buttn-shop-cart{
+.section-buttn-shop-cart{
         display: flex; 
         justify-content: center;
         position: fixed;
@@ -106,7 +97,7 @@
         background-color: rgb(181, 181, 174);
     }
     
-    .info-items{
+.info-items{
         display: flex;
         flex-direction: column;
         position:relative;
@@ -116,23 +107,23 @@
         border-radius: 10%;
     }
     
-    .bttnCarrito{
+.bttnCarrito{
         display: flex;
         position: absolute;
         z-index: 1;
         width: 75%;
         height: 2rem;
-        border-radius: 10px;
+        border-radius: 50px;
         color: white;
         align-content: center;
         background: #fd9e38;
         border-color: white;
     }
     
-    .icon-shop-cart{
+.icon-shop-cart{
         width: 2rem;
         height: 1.5rem;
-        border-radius: 10px;
         z-index: 2;
+        background-color: #fd9e38;
     }
 
