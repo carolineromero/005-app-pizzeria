@@ -5,47 +5,12 @@
 }
 
 .pizza-item-list{
-        margin-left: 8%;
-        margin-right: 8%;
-        display: grid;
+       width: 100%;
+       max-width: 600px;
+        flex-wrap: wrap;
         display: flex;
     }   
     
-  
-    
-    .rectangulo{  
-        padding: 41px 20px 7px;
-        gap: 2px;
-        background: #F3F3F7;
-        border-radius: 25px;
-        position: relative;
-        width: 100%;
-        margin-top: 82px;
-    
-    }
-    
-    .imagenPizza{
-        width: 50%;
-        z-index: 1;
-        position: absolute;
-        max-width: 140px;
-        min-width: 100px;
-    }
-    
-    .infoPrecio{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        }
-    
-    .item-pizza-button-add{
-        background-color: orange;
-        border-radius: 15px;
-        height: 30px;
-        width: 30px;
-        border: none;
-        color: white;
-    }
     
     .pizza-item{
         width: 50%;
@@ -55,30 +20,8 @@
         align-items: center;
         position: relative;
     }
-    .pizza-item-list{
-        display: flex;
-    }
- 
-    .nombrePizza{
-        position: relative;
-        z-index: 1;
-        font-family: 'Jost';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 0.8rem;
-    }
     
-    .ingrediente{
-        position: relative;
-        z-index: 1;
-        font-family: 'Jost';
-        font-style: normal;
-        color: slategrey;
-        font-weight: 600;
-        font-size: 0.6rem;
-    }
-    
-    
+
     .precio{
         display:flex;
         position: relative;

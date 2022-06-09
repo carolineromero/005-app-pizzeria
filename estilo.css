@@ -222,6 +222,7 @@ body {max-width: 600px;}
     position: relative;
     width:183px;
     height: 200px;
+    margin: 5%;
     
 
   }
@@ -279,11 +280,7 @@ body {max-width: 600px;}
     font-size: x-large;
   }
 
-  .pizza-item-list{
-    display: grid;
-        display: flex;
-        justify-content: space-between;
-  }
+
 
 .texto-pizza{
     position: relative;
