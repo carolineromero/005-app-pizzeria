@@ -8,16 +8,22 @@
     width: 100%;
     min-width: 600px;
 }
+
+.container-general{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .pizza-item-list{
     margin-top: 10%;;
-    margin-left: 8%;
-    margin-right: 8%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
  } 
  
 .item-pizza{
- padding: 4% 6%
+ padding:6%
 }
 
 .padre{
@@ -104,14 +110,14 @@
 }
 
 .section-buttn-shop-cart{
+        width: 100%;
         max-width: 600px;
+        margin: 0 auto;
         display: flex; 
         justify-content: center;
         position: fixed;
         bottom: 0;
-        width: 100%;
         height: 8%;
-        bottom: 0;
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(4px);
 }
