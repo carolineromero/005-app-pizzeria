@@ -1,4 +1,8 @@
-body {max-width: 600px;}
+body {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 .logo  {
     padding: 20px;
@@ -54,7 +58,6 @@ body {max-width: 600px;}
 
 .barraDesktop{
     display: none;
-
 }
 
 .resumenCompra{
@@ -62,7 +65,7 @@ body {max-width: 600px;}
     grid-template-columns: 50% 50%;
     font-family: "Inria Sans";
     margin: 13% 7% 13% 7%;
-    grid-template-rows: 2.5em 2.5em 2.5em 5em ;
+    grid-template-rows:  2.5em 2.5em 2.5em 5em ;
     font-size: 15px;
 }
 
@@ -96,12 +99,15 @@ body {max-width: 600px;}
 }
 
 .resComTotal{
-    align-self: center;
+    display: flex;
+    align-items:center;
     font-weight:bolder;
 }
 
 .resComTotalEuros{
+    display: flex;
     align-self: center;
+    justify-content: flex-end;
     font-weight:bolder;
     display: flex;
     justify-content: flex-end;
@@ -117,44 +123,47 @@ body {max-width: 600px;}
     padding: 20px 50px 20px 50px;
 }
 
+.buttons-cerrar{
+    display: flex;
+    justify-content: space-between;
+}
 .clearAll{
     font-family: "Inria Sans" ;
     border-radius: 3px;
-    
+    margin: 20px;
     border-style: none;
     background-color: #fdc23873;
+}
+.button-close{
+    background: none;
+    border: 0ch;
 }
 
 .item-selec-info{
     background-color: #e3e3e3;
     color: white;
-    width: 70%;
-    height: 50%;
+    width: 100%;
+    height: 18%;
     display: flex;
     border-radius: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     font-family: "Inria Sans";
-    margin: auto;
-
+   margin-top: 4%;
 }
 
 .img-precio-nombre{
     display: flex;
     align-items: center;
     padding: 0%;
-    border: 0;
-
-  
-    
+    border: 0;  
 }
 
 .item-img-pizza{
     width: 30%;
     display: flex;
     padding-right: 10px;
-
 }
 .item-selec-info-precio{
     font-family: "Inria Sans";
@@ -173,20 +182,18 @@ body {max-width: 600px;}
 .item-selec-cantidad{
     color: black;
     display: flex;
-    justify-content: space-around;
-   
+    justify-content: space-around;   
 }
 
 .buttn-item-selec-suma{
     font-family: "Inria Sans";
     font-size: x-large;
-    padding-right: 10px;
-   
+    padding-right: 10px; 
 }
+
 .buttn-item-selec-suma:hover{
     background: #FDC138;
     border-radius: 36px;
-   
 }
 
 .item-selec-info-cantidad{
@@ -207,81 +214,12 @@ body {max-width: 600px;}
     border-radius: 36px;
 }
 
-
-/*Esto es lo nuevo*/
-
-.padre{
-    padding: 10px 20px 7px;
-    gap: 2px;
-    background: #F3F3F7;
-    border-radius: 25px;
-    position: relative;
-    width:200px;
-    
-
-  }
-  
-  .img-pizza{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-   
-    
-  }
-  
-  .marco-pizza-img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow:hidden;
-  
-  }
-  
-  .pizza-precio{
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .nombre{
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.8rem;
-  }
-  
-  .ingredientes{
-    font-family: 'Jost';
-    font-style: normal;
-    color: slategrey;
-    font-weight: 600;
-    font-size: 0.6rem;
-  }
-
-  .button-add{
-    background-color: orange;
-    border-radius: 15px;
-    height: 30px;
-    width: 30px;
-    border: none;
-    color: white;
-  }
-
-  .precio{
-    font-weight: bolder;
-    font-size: x-large;
-  }
-
-  .pizza-item-list{
-    display: grid;
-        display: flex;
-        justify-content: space-between;
-  }
-
-
-
+.paginaCarrito{
+    display: none;
+}
 
 @media (min-width: 601px){
-    body (max-width: 600px)
+    body {max-width: 600px}
 }
 
 /*@media (min-width:600px){

@@ -11,201 +11,166 @@
     
 </head>
 <body>
-    <div class="paginaCompra"> <!-- Pagina Principal -->
+<div class="paginaCompra"> <!-- Pagina Principal -->
+    <div class="paginaPrincipal">
         <div class="containerHeader">
-            <div class="container-izquierdo">
-        <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo"> <!-- Logo -->
-        <nav>
-            <ul class="barraDesktop">
-                <li class= "linksBarra">Pizzas</li>
-                <li class="linksBarra">Bebidas</li>
-                <li class="linksBarra">Postres</li>
-                <li class="linksBarra">Carro</li>
-            </ul>
-        </nav>
+            <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo"> <!-- Logo -->
+            <nav>
+                <ul class="barraDesktop">
+                    <li class= "linksBarra">Pizzas</li>
+                    <li class="linksBarra">Bebidas</li>
+                    <li class="linksBarra">Postres</li>
+                    <li class="linksBarra">Carro</li>
+                </ul>
+            </nav>
         </div>
         <div class="container-general">
-        <h2 class = "encabezado">Find your</h2>
-        <h2 class = "encabezado">favourite foods 😜</h2>
-        <br>
-        <div class ="banner"> <!-- Sección de descuento del pollo = banner -->
-            <img src="./images/pizza.png" alt="" class="imgDescuento">
-            <ul class = "listaDescuento">
-                <li class ="porDescuento">25% Off</li>
-                <br>
-                <li class = "descuentoMenu">Enjoy 25% discount on</li>
-                <li class="descuentoMenu">Full Menu</li>
-            </ul>
+            <h2 class = "encabezado">Find your</h2>
+            <h2 class = "encabezado">favourite foods 😜</h2>
+            <div class ="banner"> <!-- Sección de descuento del pollo = banner -->
+                <img src="./images/pizza.png" alt="" class="imgDescuento">
+                <ul class = "listaDescuento">
+                    <li class ="porDescuento">25% Off</li>
+                    <br>
+                    <li class = "descuentoMenu">Enjoy 25% discount on</li>
+                    <li class="descuentoMenu">Full Menu</li>
+                </ul>
+            </div>
+       
+            <div class="pizza-item-list">
+                <div class="item-pizza">
+                    <div class="padre">
+                    <div class="marco-pizza-img">
+                        <img class = 'img-pizza' src='./images/pizza1.png'>
+                    </div>
+                    </div>
+                    <div class="texto-pizza">
+                        <div class="pizza-name">
+                            <p class="nombre">French</p>  
+                            <p class="ingredientes">Bacon</p>  
+                        </div>
+                    <div class="pizza-precio">
+                        <p class="precio">$ 12,50</p>  
+                        <button class = "button-add" >+</button>
+                    </div>
+                    </div> 
+                </div>
+                <div class="item-pizza">
+                <div class="padre">
+                    <div class="marco-pizza-img">
+                    <img class = 'img-pizza' src='./images/pizza5.png'>
+                    </div> 
+                </div>
+                <div class="texto-pizza">
+                    <div class="pizza-name">
+                        <p class="nombre">Californian</p>  
+                    <p class="ingredientes">Basil</p>  
+                    </div>
+                    <div class="pizza-precio">
+                        <p class="precio">$ 14</p>  
+                        <button class = "button-add" >+</button>
+                    </div>
+                </div>
+                </div>
+                <div class = "item-pizza">
+                <div class="padre">
+                    <div class="marco-pizza-img">
+                    <img class = 'img-pizza' src='./images/pizza3.png'>
+                    </div> 
+                </div>
+                <div class="texto-pizza">
+                    <div class="pizza-name">
+                        <p class="nombre">Sicilian</p>  
+                    <p class="ingredientes">Pepperoni</p>  
+                    </div>
+                    <div class="pizza-precio">
+                        <p class="precio">15$</p>  
+                        <button class = "button-add" >+</button>
+                    </div>
+                </div>
+                </div>
+                <div class = "item-pizza">
+                <div class="padre">
+                    <div class="marco-pizza-img">
+                    <img class = 'img-pizza' src='./images/pizza4.png'>
+                    </div> 
+                </div>
+                <div class="texto-pizza">
+                    <div class="pizza-name">
+                        <p class="nombre">Greek</p>  
+                    <p class="ingredientes">Olives</p>  
+                    </div>
+                    <div class="pizza-precio">
+                        <p class="precio">13,50$</p>  
+                        <button class = "button-add" >+</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
-        <br>
-        <!--<section class = "pizza-item-list">
-            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item 
-                <img src="./images/pizza1.png" alt="Imagen de pizza" class ="imagenPizza">
-                <div class = "rectangulo">
-                    <div class = "infoPizza">
-                        <p class ="nombrePizza">Pizza 1</p>
-                        <p class = "ingrediente">Ingrediente 1</p>
-                    </div>
-                    <div class = "infoPrecio">
-                        <p class = "precio" ><span>$</span>10</p>
-                     <button class = "item-pizza-button-add" >+</button>
-                    </div>
-                </div>
-            </div>
-            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item 
-                <img src="./images/pizza2.png" alt="Imagen de pizza" class ="imagenPizza">
-                <div class = "rectangulo">
-                    <div class = "infoPizza">
-                        <p class ="nombrePizza">Pizza 2</p>
-                        <p class = "ingrediente">Ingrediente 2</p>
-                    </div>
-                    <div class = "infoPrecio">
-                        <p class = "precio" ><span>$</span>12</p>
-                        <button class = "item-pizza-button-add" >+</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "pizza-item-list">
-            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item 
-                <img src="./images/pizza3.png" alt="Imagen de pizza" class ="imagenPizza">
-                <div class = "rectangulo">
-                    <div class = "infoPizza">
-                        <p class ="nombrePizza">Pizza 1</p>
-                        <p class = "ingrediente">Ingrediente 1</p>
-                    </div>
-                    <div class = "infoPrecio">
-                        <p class = "precio" ><span>$</span>10</p>
-                     <button class = "item-pizza-button-add" >+</button>
-                    </div>
-                </div>
-            </div>
-            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item
-                <img src="./images/pizza4.png" alt="Imagen de pizza" class ="imagenPizza">
-                <div class = "rectangulo">
-                    <div class = "infoPizza">
-                        <p class ="nombrePizza">Pizza 2</p>
-                        <p class = "ingrediente">Ingrediente 2</p>
-                    </div>
-                    <div class = "infoPrecio">
-                        <p class = "precio" ><span>$</span>12</p>
-                        <button class = "item-pizza-button-add" >+</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "pizza-item-list">
-            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item 
-                <img src="./images/pizza5.png" alt="Imagen de pizza" class ="imagenPizza">
-                <div class = "rectangulo">
-                    <div class = "infoPizza">
-                        <p class ="nombrePizza">Pizza 1</p>
-                        <p class = "ingrediente">Ingrediente 1</p>
-                    </div>
-                    <div class = "infoPrecio">
-                        <p class = "precio" ><span>$</span>10</p>
-                     <button class = "item-pizza-button-add" >+</button>
-                    </div>
-                </div>
-            </div>
-            <div class = "pizza-item">  <!-- Componente 3, Carlos lo llamó pizza-item 
-                <img src="./images/pizza6.png" alt="Imagen de pizza" class ="imagenPizza">
-                <div class = "rectangulo">
-                    <div class = "infoPizza">
-                        <p class ="nombrePizza">Pizza 2</p>
-                        <p class = "ingrediente">Ingrediente 2</p>
-                    </div>
-                    <div class = "infoPrecio">
-                        <p class = "precio" ><span>$</span>12</p>
-                        <button class = "item-pizza-button-add" >+</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </div>-->
-
-        <section class = "pizza-item-list">
-            <div class="padre">
-                <div class="marco-pizza-img">
-                  <img class = 'img-pizza' src='https://i.blogs.es/fff4ca/pizzas/1366_2000.jpg'
-                </div> 
-            </div>
-            <div class="texto-pizza">
-                <div class="pizza-name">
-                    <p class="nombre">Pizza 1</p>  
-                   <p class="ingredientes">Ingrediente 1</p>  
-                </div>
-                <div class="pizza-precio">
-                    <p class="precio">12$</p>  
-                    <button class = "button-add" >+</button>
-                </div>
-        
-            </div>
-        
-            </div>
-        
-        
-            <div class="padre">
-                <div class="marco-pizza-img">
-                  <img class = 'img-pizza' src='https://www.saborusa.com/wp-content/uploads/2019/10/Animate-a-disfrutar-una-deliciosa-pizza-de-salchicha-Foto-destacada.png'
-                </div> 
-            </div>
-            <div class="texto-pizza">
-                <div class="pizza-name">
-                    <p class="nombre">Pizza 2</p>  
-                   <p class="ingredientes">Ingrediente 2</p>  
-                </div>
-                <div class="pizza-precio">
-                    <p class="precio">13$</p>  
-                    <button class = "button-add" >+</button>
-                </div>
-        
-            </div>
-        
-            </div>
-        </section>
-
+    
         <section class = "section-buttn-shop-cart">
             <div class="info-items">
                 <p class ="suma-items"></p>
-                <button class = "bttnCarrito"></button>
-                <img class = "icon-shop-cart" src="./images/carrito-de-compras.png" alt="Carrito de compra">
-            </div>
+                <button onClick= ocultarPrincipal(); class = "bttnCarrito">
+                    <img class = "icon-shop-cart" src="./images/carrito-de-compras.png" alt="Carrito de compra">
+                </button>
+                </div>
         </section>
-    <br>
-    <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
-        <header class = "encabezadoCarrito">
-            <button class="clearAll" >Clear all</button>
-            <h1 class = "encabezado">Your Cart</h1>
-            <h1 class = "encabezado">Food</h1>
-        </header>
-        <body class = "item-selec">
-            <div class = "item-selec-info">
-                <div class = "img-precio-nombre">
-                <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
-                <p class = "item-selec-info-precio">$12.90</p>
-                <p class = "item-selec-info-nombre"> Greek Pizza</p>
-            </div>
+    </div>
+        <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
+            <header class = "encabezadoCarrito">
+                <div class ="buttons-cerrar">
+                    <button onClick= mostrarPrincipal(); class="clearAll" >Clear all</button>
+                    <button class="button-close">X</button>   
+                </div>
+                <h1 class = "encabezado">Your Cart</h1>
+                <h1 class = "encabezado">Food</h1>
+            </header>
+            <body class = "item-selec">
+                <div class = "item-selec-info">
+                    <div class = "img-precio-nombre">
+                    <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
+                    <p class = "item-selec-info-precio">$18.50</p>
+                    <p class = "item-selec-info-nombre"> Greek Pizza</p>
+                </div>
                 <div class = "item-selec-cantidad">
                     <p class ="buttn-item-selec-suma">+</p>
                     <p class ="item-selec-info-cantidad">1</p>
                     <p class ="buttn-item-selec-resta">-</p>
                 </div>
-            </div>
-            <div class="container-derecho">
-            <div class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
-                <div class = "resComItemTotal">Item Total:</div>
-                <div class = "resComItemTotalEuros">30<!--${..}--></div>
-                <div class = "resComDeliveryCharge">Delivery Charge:</div>
-                <div class = "resComDeliveryChargeEuros">20<!--${..}--></div>
-                <div class = "resComTax">Tax:</div>
-                <div class = "resComTaxEuros">5<!--${..}--></div>
-                <div class = "resComTotal">Total:</div>
-                <div class = "resComTotalEuros">50<!--${..}--></div>
-                <button class = "buttn-checkout">Checkout</button>
-            </div>
-        
-    </body>
-</div> 
+                </div>
+                <div class = "item-selec-info">
+                    <div class = "img-precio-nombre">
+                    <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
+                    <p class = "item-selec-info-precio">$ 8.00</p>
+                    <p class = "item-selec-info-nombre"> Japannese Pizza</p>
+                </div>
+                
+                    <div class = "item-selec-cantidad">
+                        <p class ="buttn-item-selec-suma">+</p>
+                        <p class ="item-selec-info-cantidad">1</p>
+                        <p class ="buttn-item-selec-resta">-</p>
+                    </div>
+                </div>
+                <div class="container-derecho">
+                <div class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
+                    <div class = "resComItemTotal">Item Total:</div>
+                    <div class = "resComItemTotalEuros"><span>$</span>18,50</div>
+                    <div class = "resComDeliveryCharge">Delivery Charge:</div>
+                    <div class = "resComDeliveryChargeEuros"><span>$</span>3,50</div>
+                    <div class = "resComTax">Tax:</div>
+                    <div class = "resComTaxEuros"><span>$</span>4,00</div>
+                    <div class = "resComTotal">Total:</div>
+                    <div class = "resComTotalEuros"><span>$</span>34.00</div>
+                    <button class = "buttn-checkout">Checkout</button>
+                </div>
+            </body>
+        </div> 
+    </div>
+</div>
+
+    <script src="./funcion paginas.js"></script>
+
 </body>
 </html>
