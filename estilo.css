@@ -71,7 +71,8 @@ body {max-width: 600px;}
 }
 
 .resComItemTotalEuros{
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .resComDeliveryCharge{
@@ -79,7 +80,8 @@ body {max-width: 600px;}
 }
 
 .resComDeliveryChargeEuros{
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .resComTax{
@@ -88,7 +90,8 @@ body {max-width: 600px;}
 }
 
 .resComTaxEuros{
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
     border-bottom: 1px solid #B8B4B1;
 }
 
@@ -100,6 +103,8 @@ body {max-width: 600px;}
 .resComTotalEuros{
     align-self: center;
     font-weight:bolder;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .buttn-checkout{
