@@ -56,7 +56,9 @@ Este proyecto está abierto a cualquier colaboración.
 ## Autores & agradecimientos
 [Carolina Romero](https://github.com/caroolromero)
 
-Agradecimientos a:... 
+Agradecimientos a:...  
+
+![Image text](/img%20readme/googlecarlos.jpg)
 
 ***
 ## FAQs
