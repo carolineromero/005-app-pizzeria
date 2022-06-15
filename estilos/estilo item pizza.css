@@ -1,19 +1,4 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0
-}
-
-.paginaCompra{
-    width: 100%;
-    min-width: 400px;
-}
-
-.container-general{
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
+/* Comienzo sección lista pizzas */
 
 .pizza-item-list{
     margin-top: 10%;
@@ -21,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: center;
  } 
- 
+
 .item-pizza{
  padding-top: 6%;
  padding-left: 6%;
