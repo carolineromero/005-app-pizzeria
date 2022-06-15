@@ -1,15 +1,15 @@
 const posicionPizzas = document.querySelector(".pizza-item-list");
 const posicionCarrito = document.querySelector(".item-selec");
 
-//function ocultarPrincipal() {
-  //document.querySelector(".paginaPrincipal").style.display = "none";
-  //document.querySelector(".paginaCarrito").style.display = "block";
-//}
+function ocultarPrincipal() {
+  document.querySelector(".paginaPrincipal").style.display = "none";
+  document.querySelector(".paginaCarrito").style.display = "block";
+}
 
-//function mostrarPrincipal() {
-  //document.querySelector(".paginaPrincipal").style.display = "block";
-  //document.querySelector(".paginaCarrito").style.display = "none";
-//}
+function mostrarPrincipal() {
+  document.querySelector(".paginaPrincipal").style.display = "block";
+  document.querySelector(".paginaCarrito").style.display = "none";
+}
 
 function renderizaPizzas(){
   arrayPizzas.forEach((itemPizza)=>{
@@ -38,7 +38,7 @@ function renderizaPizzas(){
 
 function sumaPizza(indiceElemento){
   if (carritoCompra.some(pizzaSel => pizzaSel.idPizza === indiceElemento)){
-    alert("Pizza ya existe");
+    cambiaUnidades("mas",indiceElemento);
   }else{
     const pizzaSel = arrayPizzas.find((pizza)=> pizza.idPizza === indiceElemento );
     carritoCompra.push({
@@ -62,9 +62,9 @@ function renderizaCarritoCompra(){
         <p class = "item-selec-info-nombre">${pizzaSel.nomPizza}</p>
       </div>
       <div class = "item-selec-cantidad">
-        <p class ="buttn-item-selec-suma" onclick "cambiaUnidades('mas',${pizzaSel.idPizza})">+</p>
+        <button class ="buttn-item-selec-suma" onclick = "cambiaUnidades('mas',${pizzaSel.idPizza})">+</button>
         <p class ="item-selec-info-cantidad">${pizzaSel.unidades}</p>
-        <p class ="buttn-item-selec-resta" cambiaUnidades('menos',${pizzaSel.idPizza})">-</p>
+        <button class ="buttn-item-selec-resta" onclick = "cambiaUnidades('menos',${pizzaSel.idPizza})">-</button>
       </div>
     </div> `
   }) 
@@ -73,21 +73,26 @@ function renderizaCarritoCompra(){
 function cambiaUnidades(accion,id){
   carritoCompra = carritoCompra.map((pizzaSel) =>{
 
+    let unidadesPrevias = pizzaSel.unidades;
+
     if (pizzaSel.idPizza === id){
-      
+      if (accion ==="menos" && unidadesPrevias > 1) {
+        unidadesPrevias --;
+      } else if (accion === "mas"){
+        unidadesPrevias ++;
+      }
     }
-
-    return pizzaSel;
-
-  })
-
+    return {
+      ...pizzaSel,
+      unidades: unidadesPrevias,
+    };
+  });
+  renderizaCarritoCompra()
 }
 
-
-
 function main(){
-  document.querySelector(".paginaPrincipal").style.display = "block";
-  document.querySelector(".paginaCarrito").style.display = "block";
+  //document.querySelector(".paginaPrincipal").style.display = "block";
+  //document.querySelector(".paginaCarrito").style.display = "block";
   renderizaPizzas()
 }
 

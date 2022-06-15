@@ -5,7 +5,6 @@
 }
 
 .encabezadoCarrito{
-
 }
 
 .buttons-cerrar{
@@ -79,8 +78,13 @@
 
 .buttn-item-selec-suma{
     font-family: "Inria Sans";
-    font-size: x-large;
-    padding-right: 10px; 
+    font-size: x-large; 
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(227,227,227);
 }
 
 .buttn-item-selec-suma:hover{
@@ -92,13 +96,19 @@
     font-family: "Inria Sans";
     font-size: x-large;
     display: flex;
-    justify-content: space-around;
+    margin-left: 8%;
     padding-right: 10px;
 }
 
 .buttn-item-selec-resta{
     font-family: "Inria Sans";
     font-size: x-large;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    color: black;
+    background-color: rgb(227,227,227);
 }
 
 .buttn-item-selec-resta:hover{
