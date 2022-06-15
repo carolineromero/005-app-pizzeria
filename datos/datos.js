@@ -84,3 +84,27 @@ arrayPizzas = [
         cantidad: 0
     }
 ]
+
+arrayPizzasSeleccionadas = [
+    {
+     imgPizza: "./images/pizza1.png",
+     nomPizza: "Peperoni",
+     ingredientePpal: "Peperoni y queso",
+     precioPizza: 18,
+     cantidad: 8
+    },
+    {
+        imgPizza: "./images/pizza2.png",
+        nomPizza: "Napolitana",
+        ingredientePpal: "Queso",
+        precioPizza: 18,
+        cantidad: 3
+    },
+    {
+        imgPizza: "./images/pizza3.png",
+        nomPizza: "Cuatro Quesos",
+        ingredientePpal: "Queso Emental",
+        precioPizza: 20,
+        cantidad: 4
+    },
+]
