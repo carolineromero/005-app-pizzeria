@@ -1,3 +1,13 @@
+function ocultarPrincipal() {
+  document.querySelector(".paginaPrincipal").style.display = "none";
+  document.querySelector(".paginaCarrito").style.display = "block";
+}
+
+function mostrarPrincipal() {
+  document.querySelector(".paginaPrincipal").style.display = "block";
+  document.querySelector(".paginaCarrito").style.display = "none";
+}
+
 function newNodePizza(newImg,newName,newIngred,newPrice){
     let image = newImg;
     let nombre = newName;
@@ -5,18 +15,25 @@ function newNodePizza(newImg,newName,newIngred,newPrice){
     let precio = newPrice;
     let nodoNuevo =
     `
-    <div class = "pizza-item">  <!-- Componente 3 Carlos lo llamó pizza-item -->
-    <img src=${image} alt="Imagen de pizza" class ="imagenPizza">
-    <div class = "rectangulo"></div>
-    <div class = "infoPizza">
-        <p class ="nombrePizza">${nombre}</p>
-        <p class = "ingrediente">${ingrediente}</p>
+    <div class="item-pizza">
+        <div class="padre">
+        <div class="marco-pizza-img">
+            <img class = 'img-pizza' src='${image}'>
+        </div>
+        </div>
+        <div class="texto-pizza">
+            <div class="pizza-name">
+                <p class="nombre">${nombre}</p>  
+                <p class="ingredientes">${ingrediente}</p>  
+            </div>
+        <div class="pizza-precio">
+            <p class = "precio" ><span>$</span>${precio}</p>
+            <button class = "button-add" onclick= "sumarPizza()">+</button>
+        </div>
+        </div> 
     </div>
-    <div class = "infoPrecio">
-        <p class = "precio" ><span>$</span>${precio}</p>
-        <button class = "item-pizza-button-add" >+</button>
-    </div>
-</div>`;
+    `
+
     return nodoNuevo;
 }
 function insertNodePizza(nodeInfo){
@@ -29,9 +46,8 @@ function despliegaMenu(){
   let nombre;
   let ingrediente;
   let precio;
-  let sizeArr;
+  let sizeArr = arrayPizzas.length;;
   let i = 0;
-  sizeArr = arrayPizzas.length;
   for (i; i < sizeArr; i++ ){
     image = arrayPizzas[i].imgPizza;
     nombre = arrayPizzas[i].nomPizza;

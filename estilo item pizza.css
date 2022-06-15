@@ -6,7 +6,7 @@
 
 .paginaCompra{
     width: 100%;
-    min-width: 600px;
+    min-width: 400px;
 }
 
 .container-general{
@@ -16,14 +16,16 @@
 }
 
 .pizza-item-list{
-    margin-top: 10%;;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
  } 
  
 .item-pizza{
- padding:6%
+ padding-top: 6%;
+ padding-left: 6%;
+ padding-right: 6%;
 }
 
 .padre{
@@ -32,9 +34,9 @@
     background: #F3F3F7;
     border-radius: 25px;
     position: relative;
-    width:183px;
-    height: 200px;
-    margin: 5%;
+    width: 150px;
+    height: 150px;
+    margin: 2%;
   }
 
 .marco-pizza-img{
