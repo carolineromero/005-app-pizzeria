@@ -1,0 +1,174 @@
+/* Comienzo página carrito */
+
+.paginaCarrito{
+    display: none;
+}
+
+.encabezadoCarrito{
+
+}
+
+.buttons-cerrar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearAll{
+    font-family: "Inria Sans" ;
+    border-radius: 3px;
+    margin: 20px;
+    border-style: none;
+    background-color: #fdc23873;
+}
+
+.button-close{
+    background: none;
+    border: 0ch;
+}
+
+.item-selec{
+
+}
+
+.item-selec-info{
+    background-color: #e3e3e3;
+    color: white;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Inria Sans";
+   margin-top: 4%;
+}
+
+.img-precio-nombre{
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    border: 0;  
+}
+
+.item-img-pizza{
+    width: 30%;
+    display: flex;
+    padding-right: 10px;
+}
+
+.item-selec-info-precio{
+    font-family: "Inria Sans";
+    color:black;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-right: 10px;
+}
+
+.item-selec-info-nombre{
+    color: black;
+    font-family: "Inria Sans";
+    padding-right: 10px;
+}
+
+.item-selec-cantidad{
+    color: black;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.buttn-item-selec-suma{
+    font-family: "Inria Sans";
+    font-size: x-large;
+    padding-right: 10px; 
+}
+
+.buttn-item-selec-suma:hover{
+    background: #FDC138;
+    border-radius: 36px;
+}
+
+.item-selec-info-cantidad{
+    font-family: "Inria Sans";
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+.buttn-item-selec-resta{
+    font-family: "Inria Sans";
+    font-size: x-large;
+}
+
+.buttn-item-selec-resta:hover{
+    background: #FDC138;
+    border-radius: 36px;
+}
+
+.container-derecho{
+
+}
+
+.resumenCompra{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: "Inria Sans";
+    margin: 13% 7% 13% 7%;
+    grid-template-rows:  2.5em 2.5em 2.5em 5em ;
+    font-size: 15px;
+}
+
+.resComItemTotal{
+    color: #B8B4B1;
+}
+
+.resComItemTotalEuros{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.resComDeliveryCharge{
+    color: #B8B4B1;
+}
+
+.resComDeliveryChargeEuros{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.resComTax{
+    border-bottom: 1px solid #B8B4B1;
+    color: #B8B4B1;
+}
+
+.resComTaxEuros{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #B8B4B1;
+}
+
+.resComTotal{
+    display: flex;
+    align-items:center;
+    font-weight:bolder;
+}
+
+.resComTotalEuros{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    font-weight:bolder;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttn-checkout{
+    grid-column: 1/3;
+    border-radius: 30px;
+    background-color: #FDC138;
+    border-width: 0px;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 20px 50px 20px 50px;
+}

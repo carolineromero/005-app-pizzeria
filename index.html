@@ -5,105 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Planet</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="stylesheet" href="./estilos/estilo item pizza.css">
+    <link rel="stylesheet" href="./estilos/estilo-pag-carrito.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="./estilo item pizza.css">
     
 </head>
 <body>
 <div class="paginaCompra"> <!-- Pagina Principal -->
     <div class="paginaPrincipal">
         <div class="containerHeader">
-            <img src="./images/logo-principal.png" alt="Logo Pizza Planet" class = "logo"> <!-- Logo -->
-            <nav>
-                <ul class="barraDesktop">
-                    <li class= "linksBarra">Pizzas</li>
-                    <li class="linksBarra">Bebidas</li>
-                    <li class="linksBarra">Postres</li>
-                    <li class="linksBarra">Carro</li>
-                </ul>
-            </nav>
+            <img class = "logo" src="./images/logo-principal.png" alt="Logo Pizza Planet"> <!-- Logo -->
         </div>
         <div class="container-general">
             <h2 class = "encabezado">Find your</h2>
             <h2 class = "encabezado">favourite foods 😜</h2>
             <div class ="banner"> <!-- Sección de descuento del pollo = banner -->
-                <img src="./images/pizza.png" alt="" class="imgDescuento">
+                <img class="imgDescuento" src="./images/pizza.png" alt="Logo tipo de la empresa">
                 <ul class = "listaDescuento">
                     <li class ="porDescuento">25% Off</li>
-                    <br>
                     <li class = "descuentoMenu">Enjoy 25% discount on</li>
                     <li class="descuentoMenu">Full Menu</li>
                 </ul>
-            </div>
-       
+            </div><!-- Sección de lista de pizzas -->
             <div class="pizza-item-list">
             </div>
         </div>
-    
         <section class = "section-buttn-shop-cart">
             <div class="info-items">
                 <p class ="suma-items"></p>
                 <button onClick= ocultarPrincipal(); class = "bttnCarrito">
                     <img class = "icon-shop-cart" src="./images/carrito-de-compras.png" alt="Carrito de compra">
                 </button>
-                </div>
+            </div>
         </section>
     </div>
-        <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
-            <header class = "encabezadoCarrito">
-                <div class ="buttons-cerrar">
-                    <button onClick= mostrarPrincipal(); class="clearAll" >Clear all</button>
-                    <button class="button-close">X</button>   
-                </div>
-                <h1 class = "encabezado">Your Cart</h1>
-                <h1 class = "encabezado">Food</h1>
-            </header>
-            <body class = "item-selec">
-               /* <div class = "item-selec-info">
-                    <div class = "img-precio-nombre">
-                    <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
-                    <p class = "item-selec-info-precio">$18.50</p>
-                    <p class = "item-selec-info-nombre"> Greek Pizza</p>
-                </div>
-                <div class = "item-selec-cantidad">
-                    <p class ="buttn-item-selec-suma">+</p>
-                    <p class ="item-selec-info-cantidad">1</p>
-                    <p class ="buttn-item-selec-resta">-</p>
-                </div>
-                </div>
-                <div class = "item-selec-info">
-                    <div class = "img-precio-nombre">
-                    <img src="./images/pizza01.png" class = "item-img-pizza" alt="Pizza seleccionada">
-                    <p class = "item-selec-info-precio">$ 8.00</p>
-                    <p class = "item-selec-info-nombre"> Japannese Pizza</p>
-                </div>
-                
-                
-                    <div class = "item-selec-cantidad">
-                        <p class ="buttn-item-selec-suma">+</p>
-                        <p class ="item-selec-info-cantidad">1</p>
-                        <p class ="buttn-item-selec-resta">-</p>
-                    </div>
-                </div>
-                <div class="container-derecho">
-                <div class = "resumenCompra"> <!-- Resumen Compra  esta clase debe ser display grid para ordenar en tabla los elementos-->
-                    <div class = "resComItemTotal">Item Total:</div>
-                    <div class = "resComItemTotalEuros"><span>$</span>18,50</div>
-                    <div class = "resComDeliveryCharge">Delivery Charge:</div>
-                    <div class = "resComDeliveryChargeEuros"><span>$</span>3,50</div>
-                    <div class = "resComTax">Tax:</div>
-                    <div class = "resComTaxEuros"><span>$</span>4,00</div>
-                    <div class = "resComTotal">Total:</div>
-                    <div class = "resComTotalEuros"><span>$</span>34.00</div>
-                    <button class = "buttn-checkout">Checkout</button>
-                </div>
-            </body>
-        </div> 
-    </div>
+    <div class = "paginaCarrito"><!-- Pagina de CheckOut  -->
+        <header class = "encabezadoCarrito">
+            <div class ="buttons-cerrar">
+                <button class="clearAll" onClick= "mostrarPrincipal()" >Clear all</button>
+                <button class="button-close">X</button>   
+            </div>
+            <h1 class = "encabezado">Your Cart</h1>
+            <h1 class = "encabezado">Food</h1>
+        </header>
+        <div class = "item-selec">
+            <!-- Pizzas SEleccionadas -->
+        </div>
+        <div class="container-derecho">
+            <div class = "resumenCompra"> <!-- Resumen Compra  -->
+                <div class = "resComItemTotal">Item Total:</div>
+                <div class = "resComItemTotalEuros"><span>$</span></div>
+                <div class = "resComDeliveryCharge">Delivery Charge:</div>
+                <div class = "resComDeliveryChargeEuros"><span>$</span></div>
+                <div class = "resComTax">Tax:</div>
+                <div class = "resComTaxEuros"><span>$</span></div>
+                <div class = "resComTotal">Total:</div>
+                <div class = "resComTotalEuros"><span>$</span></div>
+            <button class = "buttn-checkout">Checkout</button>
+        </div>
+    </div> 
 </div>
     <script src="./datos/datos.js"></script>
     <script src="./funciones/funciones.js"></script>
-
 </body>
 </html>
