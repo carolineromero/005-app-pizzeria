@@ -67,7 +67,20 @@ function renderizaCarritoCompra(){
         <button class ="buttn-item-selec-resta" onclick = "cambiaUnidades('menos',${pizzaSel.idPizza})">-</button>
       </div>
     </div> `
-  }) 
+  })
+  renderizaItems(carritoCompra); 
+  despliegaTotal();
+}
+
+function renderizaItems(carritoCompra){
+  let items = carritoCompra.length;
+  let cuentaItems = 0;
+  if (items > 0){
+    carritoCompra.forEach((item) => {
+      cuentaItems = cuentaItems + item.unidades;
+    })
+    document.querySelector(".suma-items").innerHTML = items;
+  }
 }
 
 function cambiaUnidades(accion,id){
@@ -88,6 +101,39 @@ function cambiaUnidades(accion,id){
     };
   });
   renderizaCarritoCompra()
+}
+
+function sumaItemTotal(carrito){
+  let suma = 0;
+
+  carrito.forEach((pizzaSel)=>{
+    suma = suma + (pizzaSel.precioPizza * pizzaSel.unidades) 
+    })
+  return suma;
+}
+
+function calculaTax(subtotal){
+  return (subtotal * 0.27);
+}
+
+function calculaTotal(subtotal, tax, delivery){
+  let total = Number(subtotal) + Number(tax) + Number(delivery);
+  return total;
+}
+
+function despliegaTotal(){
+  let itemTotal = sumaItemTotal(carritoCompra);
+  itemTotal = itemTotal.toFixed(2);
+  let delCharge= 2.50;
+  let tax = calculaTax(itemTotal);
+  tax = tax.toFixed(2);
+  let total =  calculaTotal(itemTotal, tax, delCharge);
+  //total = total.toFixed(2);
+
+  document.querySelector(".resComItemTotalEuros").innerHTML = itemTotal;
+  document.querySelector(".resComDeliveryChargeEuros").innerHTML = delCharge;
+  document.querySelector(".resComTaxEuros").innerHTML = tax;
+  document.querySelector(".resComTotalEuros").innerHTML = total
 }
 
 function main(){
