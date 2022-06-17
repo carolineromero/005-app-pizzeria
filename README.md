@@ -36,7 +36,7 @@ Lista de tecnologías usadas en el desarrollo del proyecto:
 
 ***
 ## Instalación
-Como instalar el respositorio:
+Como instalar el repositorio:
 
 1. Ingresar en Visual Studio Code
 2.  Clonar el proyecto con el comando: _git clone_ https://github.com/caroolromero/apprestaurante.git
