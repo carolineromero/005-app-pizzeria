@@ -39,8 +39,10 @@ Lista de tecnologías usadas en el desarrollo del proyecto:
 Como instalar el repositorio:
 
 1. Ingresar en Visual Studio Code
-2.  Clonar el proyecto con el comando: _git clone_ https://github.com/caroolromero/apprestaurante.git
-
+2.  Clonar el proyecto con el comando: 
+ ``` 
+git clone https://github.com/caroolromero/apprestaurante.git
+```
 
 ***
 
@@ -51,6 +53,9 @@ Si tiene cualquier problema póngase en contacto con:
 ***
 ## Hoja de ruta
 
+En nuestra primera entrega presentamos la web del restaurant de pizzas formato mobile.  
+Los productos para añadir al *carrito* son leídos desde un array, por lo que se pueden agregar nuevos de forma dinámica.  
+Al hacer *click* en el botón del *carrito de compras* lleva a la página dedicada especialmente a ello, para luego hacer *check out*.  
 En la próxima actualización nuestro objetivo es que el *carrito de compra* funcione de forma dinámica, pudiendo agregar y restar productos, y que se vea reflejado en los precios, y el *Total a pagar*.
 
 ***
@@ -75,4 +80,4 @@ Agradecimientos a:...
 
 Preguntas frecuentes:
 1. **Si queremos poner alguna pregunta**
-y aqui poner su repuesta _italic words_. 
+y aqui poner su repuesta.
