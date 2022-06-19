@@ -1,5 +1,5 @@
 const posicionPizzas = document.querySelector(".pizza-item-list");
-const posicionCarrito = document.querySelector(".item-selec");
+const posicionCarrito = document.querySelector("#item-selec");
 
 function ocultarPrincipal() {
   document.querySelector(".paginaPrincipal").style.display = "none";
@@ -36,17 +36,24 @@ function renderizaPizzas(){
 })
 } 
 
+function isInCart(indiceElemento){
+  let result = carritoCompra.some(pizzaSel => pizzaSel.idPizza === indiceElemento);
+ return result
+}
+
 function sumaPizza(indiceElemento){
-  if (carritoCompra.some(pizzaSel => pizzaSel.idPizza === indiceElemento)){
+  if (isInCart(indiceElemento)){
     cambiaUnidades("mas",indiceElemento);
-  }else{
-    const pizzaSel = arrayPizzas.find((pizza)=> pizza.idPizza === indiceElemento );
-    carritoCompra.push({
-      ...pizzaSel,
-      unidades: 1
-    })
-    renderizaCarritoCompra();
+  return;
   }
+  
+  const pizzaSel = arrayPizzas.find((pizza)=> pizza.idPizza === indiceElemento );
+  carritoCompra.push({
+    ...pizzaSel,
+    unidades: 1
+  })
+  renderizaCarritoCompra();
+  
 }
 
 function renderizaCarritoCompra(){
@@ -68,37 +75,48 @@ function renderizaCarritoCompra(){
       </div>
     </div> `
   })
-  renderizaItems(carritoCompra); 
+  renderizaUnidades(carritoCompra); 
   despliegaTotal();
 }
 
-function renderizaItems(carritoCompra){
+function renderizaUnidades(carritoCompra){
   let items = carritoCompra.length;
   let cuentaItems = 0;
   if (items > 0){
     carritoCompra.forEach((item) => {
       cuentaItems = cuentaItems + item.unidades;
     })
-    document.querySelector(".suma-items").innerHTML = items;
+    document.querySelector(".suma-items").innerHTML = cuentaItems;
   }
 }
 
+function removeItemFromCart(id){
+  carritoCompra = carritoCompra.filter((pizzaSel) => pizzaSel.idPizza !== id);
+  renderizaCarritoCompra();
+}
+
 function cambiaUnidades(accion,id){
+  let idCambio = id;
+
   carritoCompra = carritoCompra.map((pizzaSel) =>{
+  let unidadesPrevias = pizzaSel.unidades;
 
-    let unidadesPrevias = pizzaSel.unidades;
-
-    if (pizzaSel.idPizza === id){
-      if (accion ==="menos" && unidadesPrevias > 1) {
-        unidadesPrevias --;
-      } else if (accion === "mas"){
-        unidadesPrevias ++;
+  if (pizzaSel.idPizza === idCambio){
+    if (accion ==="menos" && unidadesPrevias > 0) {
+      unidadesPrevias --;
+      console.log(unidadesPrevias);
+      if (unidadesPrevias == 0){
+        removeItemFromCart(idCambio);
+        console.log(carritoCompra);
       }
+    } else if (accion === "mas"){
+      unidadesPrevias ++;
     }
-    return {
-      ...pizzaSel,
-      unidades: unidadesPrevias,
-    };
+  }
+  return{
+    ...pizzaSel,
+    unidades: unidadesPrevias,
+  };
   });
   renderizaCarritoCompra()
 }
