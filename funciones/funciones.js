@@ -46,23 +46,20 @@ function sumaPizza(indiceElemento){
     cambiaUnidades("mas",indiceElemento);
   return;
   }
-  
   const pizzaSel = arrayPizzas.find((pizza)=> pizza.idPizza === indiceElemento );
   carritoCompra.push({
     ...pizzaSel,
     unidades: 1
   })
   renderizaCarritoCompra();
-  
 }
 
 function renderizaCarritoCompra(){
   posicionCarrito.innerHTML = "";
-
   carritoCompra.forEach((pizzaSel) => {
     posicionCarrito.innerHTML +=
     `
-    <div class = "item-selec-info">
+    <div class = "item-selec-info" id ="${pizzaSel.idPizza}">
       <div class = "img-precio-nombre">
         <img src="${pizzaSel.imgPizza}" class = "item-img-pizza" alt="Pizza seleccionada">
         <p class = "item-selec-info-precio"><span>$</span>${pizzaSel.precioPizza}</p>
@@ -104,8 +101,10 @@ function cambiaUnidades(accion,id){
   if (pizzaSel.idPizza === idCambio){
     if (accion ==="menos" && unidadesPrevias > 0) {
       unidadesPrevias --;
-      console.log(unidadesPrevias);
-      if (unidadesPrevias == 0){
+      if (unidadesPrevias === 0){
+        const pizzaRemove = document.getElementById(idCambio);
+        console.log(pizzaRemove);
+        pizzaRemove.remove();
         removeItemFromCart(idCambio);
         console.log(carritoCompra);
       }
@@ -118,7 +117,8 @@ function cambiaUnidades(accion,id){
     unidades: unidadesPrevias,
   };
   });
-  renderizaCarritoCompra()
+  // renderizaCarritoCompra()
+  renderizaUnidades(carritoCompra);
 }
 
 function sumaItemTotal(carrito){
