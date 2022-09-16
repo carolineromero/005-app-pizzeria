@@ -79,5 +79,4 @@ Agradecimientos a:...
 ## FAQs
 
 Preguntas frecuentes:
-1. **Si queremos poner alguna pregunta**
-y aqui poner su repuesta.
+
